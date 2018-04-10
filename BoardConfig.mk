@@ -56,3 +56,10 @@ TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/Battery
 BOARD_CUSTOM_BOOTIMG_MK := device/huawei/berkeley/custombootimg.mk
 # MTP will not work until we update it to support ffs
 TW_EXCLUDE_MTP := true
+
+# blu_spark extras
+TARGET_USERIMAGES_USE_F2FS := true
+TW_EXCLUDE_SUPERSU := true
+TW_EXTRA_LANGUAGES := true
+TW_INCLUDE_NTFS_3G := true
+TW_IGNORE_MISC_WIPE_DATA := true
